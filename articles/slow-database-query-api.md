@@ -1,16 +1,14 @@
 ---
-layout: default
+layout: article
 title: One Slow Database Query Took Down an API
 description: How a slow query can exhaust a connection pool and make an API fail.
 permalink: /articles/slow-database-query-api/
+category: Database Reliability
+reading_time: 8 min read
+episode: 001
 ---
 
-## One Slow Database Query Took Down an API
-
-> **Scenario type:** Representative production scenario, not a claim about a specific real-world outage. Metrics below are illustrative to explain the failure mechanism.
-
-A database can be reachable while an API is effectively unavailable. One slow query can occupy every connection in an application's database pool, leaving otherwise-fast requests waiting for a connection until they time out.
-
+<div class="article-prose">
 ## 1. The incident
 
 Imagine a payments API handling about 500 requests per second. A query that normally completes in roughly 50 milliseconds begins taking 5 seconds after a release or a change in data volume.
@@ -110,7 +108,7 @@ Timeouts should be designed as a coherent budget across database execution, pool
 
 ## 10. FDE challenge
 
-**You are on call:** an API starts returning 504s. CPU is at 40%, memory is normal, the database pool is 50/50, and one query's latency has jumped from 50 ms to 5 seconds.
+> **You are on call:** an API starts returning 504s. CPU is at 40%, memory is normal, the database pool is 50/50, and one query's latency has jumped from 50 ms to 5 seconds.
 
 What do you investigate first, what signal would confirm your hypothesis, and how do you reduce customer impact without creating duplicate payment operations?
 
@@ -118,7 +116,9 @@ A strong answer separates **mitigation** from **root-cause correction**: correla
 
 ---
 
-### Video
+### Watch the episode
 
 This article is the technical companion to the Real Production Problems episode. The video distills the incident into a short walkthrough; this page keeps the deeper reasoning, caveats, and operational checks.
 
+[Visit the YouTube channel](https://www.youtube.com/@RealProductionProblems) ↗
+</div>
