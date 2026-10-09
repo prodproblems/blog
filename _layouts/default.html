@@ -18,14 +18,14 @@
         <span class="brand-name">REAL PRODUCTION <b>PROBLEMS</b></span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="{{ '/' | relative_url }}">Articles</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/articles/' | relative_url }}"{% if page.url contains '/articles' %} aria-current="page"{% endif %}>Articles</a>
+        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
         <a class="nav-youtube" href="https://www.youtube.com/@RealProductionProblems" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
   <main class="page-content">
-    <div class="content-shell{% if page.url == '/' %} home-shell{% else %} reading-shell{% endif %}">
+    <div class="content-shell{% if page.url == '/' %} home-shell{% elsif page.url contains '/articles/' and page.url != '/articles/' %} article-shell{% elsif page.url == '/articles/' %} listing-shell{% else %} reading-shell{% endif %}">
       {{ content }}
     </div>
   </main>
