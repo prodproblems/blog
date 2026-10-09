@@ -145,3 +145,32 @@ A strong answer separates **mitigation** from **root-cause correction**:
 - This article is the technical companion to the Real Production Problems episode.
 - The video distills the incident into a short walkthrough; this page keeps the deeper reasoning, caveats, and operational checks.
 - [Visit the YouTube channel](https://www.youtube.com/@RealProductionProblems) ↗
+
+
+---
+
+## Visual summary
+
+These diagrams summarize the incident, failure mechanism, and recovery workflow.
+
+### 1. The production incident
+
+![Production incident: API Gateway, backend service, and PostgreSQL showing slow query symptoms]({{ '/assets/images/day-1-production-incident.svg' | relative_url }})
+
+- A slow query increases request latency.
+- The connection pool fills up and the API begins returning 504 errors.
+
+### 2. Why the API fails
+
+![Connection pool saturation: slow SQL occupies all connections and requests queue]({{ '/assets/images/day-1-connection-pool-failure.svg' | relative_url }})
+
+- Long-running queries hold connections for longer.
+- New requests wait for a free connection and can time out.
+
+### 3. Mitigation, fix, and prevention
+
+![Incident response workflow covering mitigation, diagnosis, and long-term prevention]({{ '/assets/images/day-1-mitigation-fix.svg' | relative_url }})
+
+- Mitigate customer impact first.
+- Confirm the root cause before changing queries or indexes.
+- Add monitoring, alerts, and load tests to reduce recurrence.
