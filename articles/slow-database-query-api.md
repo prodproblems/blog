@@ -8,7 +8,6 @@ reading_time: 8 min read
 episode: 001
 ---
 
-<div class="article-prose">
 ## 1. The incident
 
 Imagine a payments API handling about 500 requests per second. A query that normally completes in roughly 50 milliseconds begins taking 5 seconds after a release or a change in data volume.
