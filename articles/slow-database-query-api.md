@@ -142,8 +142,22 @@ A strong answer separates **mitigation** from **root-cause correction**:
 
 ## Watch the episode
 
-- This article is the technical companion to the Real Production Problems episode.
-- The video distills the incident into a short walkthrough; this page keeps the deeper reasoning, caveats, and operational checks.
+Watch the Day 1 walkthrough here:
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px; margin: 1rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/LaUlmYq-KrY"
+    title="One Slow Database Query Took Down an API | Real Production Problems"
+    loading="lazy"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+- [Watch directly on YouTube](https://youtu.be/LaUlmYq-KrY) ↗
+- This article is the technical companion to the episode, with deeper reasoning, caveats, and operational checks.
 - [Visit the YouTube channel](https://www.youtube.com/@RealProductionProblems) ↗
 
 
