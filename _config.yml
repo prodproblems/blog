@@ -1,4 +1,6 @@
 title: Real Production Problems
 description: Real engineering problems. Explained in 3 minutes.
+url: https://prodproblems.github.io
+baseurl: /blog
 theme: minima
 markdown: kramdown
