@@ -1,22 +1,40 @@
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | escape }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.scss' | relative_url }}">
-    {% feed_meta %}
-    {% seo %}
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="wrapper">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <nav><a href="{{ '/about' | relative_url }}">About</a><a href="https://www.youtube.com/@RealProductionProblems">YouTube</a></nav>
-      </div>
-    </header>
-    <main class="page-content"><div class="wrapper">{{ content }}</div></main>
-    <footer class="site-footer"><div class="wrapper">Real engineering problems. Explained in 3 minutes. <span>Test how it fails.</span></div></footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Real Production Problems home">
+        <span class="brand-mark">R<span>/</span>P</span>
+        <span class="brand-name">REAL PRODUCTION <b>PROBLEMS</b></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}">Articles</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a class="nav-youtube" href="https://www.youtube.com/@RealProductionProblems" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+    <div class="content-shell{% if page.url == '/' %} home-shell{% else %} reading-shell{% endif %}">
+      {{ content }}
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <a class="brand footer-brand" href="{{ '/' | relative_url }}"><span class="brand-mark">R<span>/</span>P</span><span class="brand-name">REAL PRODUCTION <b>PROBLEMS</b></span></a>
+      <p>Real engineering problems. Explained in 3 minutes.</p>
+      <span class="footer-tagline">TEST HOW IT FAILS.</span>
+    </div>
+  </footer>
+</body>
 </html>
