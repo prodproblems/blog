@@ -1,15 +1,12 @@
 ---
 layout: default
 ---
-<article class="article-page">
-  <div class="article-topline"><a href="{{ '/articles/' | relative_url }}">← ALL ARTICLES</a><span>FIELD NOTE / {{ page.episode | default: '001' }}</span></div>
-  <header class="article-hero">
-    <div class="page-kicker"><span class="status-dot"></span> {{ page.category | default: 'PRODUCTION ENGINEERING' }}</div>
-    <h1>{{ page.title }}</h1>
-    <p class="article-deck">{{ page.description }}</p>
-    <div class="article-meta"><span>⏱ {{ page.reading_time | default: '8 min read' }}</span><span>10-PART INCIDENT BREAKDOWN</span><span class="scenario-badge">REPRESENTATIVE SCENARIO</span></div>
-  </header>
-  <div class="article-callout"><span class="callout-mark">!</span><p><strong>Scenario type: representative production scenario.</strong> This is not a claim about a specific real-world outage. Metrics are illustrative and explain the failure mechanism.</p></div>
-  <div class="article-body">{{ content }}</div>
-  <nav class="article-end-nav" aria-label="Article navigation"><a href="{{ '/articles/' | relative_url }}">← Browse all articles</a><a href="https://www.youtube.com/@RealProductionProblems" target="_blank" rel="noopener">Watch on YouTube ↗</a></nav>
+<article class="simple-page article-page">
+  <p class="eyebrow"><a href="{{ '/articles/' | relative_url }}">← All articles</a> · {{ page.category | default: 'PRODUCTION ENGINEERING' }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="lead">{{ page.description }}</p>
+  <p class="scenario-note"><strong>Scenario type:</strong> Representative production scenario, not a claim about a specific real-world outage. Metrics are illustrative.</p>
+  <div class="article-prose">{{ content }}</div>
+  <hr>
+  <p><a href="{{ '/articles/' | relative_url }}">← All articles</a> · <a href="https://www.youtube.com/@RealProductionProblems" target="_blank" rel="noopener">YouTube channel ↗</a></p>
 </article>
