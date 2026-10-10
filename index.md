@@ -13,6 +13,12 @@ description: Real engineering problems, explained simply.
 
 <section class="home-section">
   <h2>Latest breakdown</h2>
+  <a class="article-card" href="{{ '/articles/retries-turn-slow-dependency-into-outage/' | relative_url }}">
+    <p class="eyebrow">API RELIABILITY · RETRY SAFETY</p>
+    <h3>How Retries Turn a Slow Dependency into an Outage</h3>
+    <p>How layered retries amplify downstream load, how to diagnose the feedback loop, and how to build bounded, payment-safe retries.</p>
+    <span class="card-link">Read the breakdown →</span>
+  </a>
   <a class="article-card" href="{{ '/articles/slow-database-query-api/' | relative_url }}">
     <p class="eyebrow">DATABASES · API RELIABILITY</p>
     <h3>One Slow Database Query Took Down an API</h3>
