@@ -8,6 +8,21 @@ reading_time: 7 min read
 episode: 002
 ---
 
+## Watch the Day 2 video
+
+<div class="video-embed">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/nBmzJtkKhmc"
+    title="How Retries Turn a Slow Dependency into an Outage — Real Production Problems Day 2"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+[Watch directly on YouTube](https://youtu.be/nBmzJtkKhmc) ↗
+
 ## Day 2 — The incident
 
 A payment API is handling about **1,000 original requests per second**. Its downstream provider can sustain roughly **1,200 requests per second** under the current workload. Provider latency rises and some requests time out. The API Gateway, application service, and HTTP client may each retry independently.
