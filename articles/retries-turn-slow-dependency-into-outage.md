@@ -8,20 +8,28 @@ reading_time: 7 min read
 episode: 002
 ---
 
-## Watch the Day 2 video
+## Watch the episode
 
-<div class="video-embed">
+Watch the Day 2 walkthrough here:
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px; margin: 1rem 0;">
   <iframe
     src="https://www.youtube-nocookie.com/embed/nBmzJtkKhmc"
-    title="How Retries Turn a Slow Dependency into an Outage — Real Production Problems Day 2"
+    title="How Retries Turn a Slow Dependency into an Outage | Real Production Problems"
     loading="lazy"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
     referrerpolicy="strict-origin-when-cross-origin"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen>
   </iframe>
 </div>
 
-[Watch directly on YouTube](https://youtu.be/nBmzJtkKhmc) ↗
+- [Watch directly on YouTube](https://youtu.be/nBmzJtkKhmc) ↗
+- This article is the technical companion to the episode, with deeper reasoning, caveats, and operational checks.
+- [Visit the YouTube channel](https://www.youtube.com/@RealProductionProblem) ↗
+
+
+---
 
 ## Day 2 — The incident
 
