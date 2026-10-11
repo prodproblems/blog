@@ -10,6 +10,13 @@ permalink: /articles/
   <h1>Production problems, explained.</h1>
   <p class="lead">Technical breakdowns focused on how systems fail and how engineers make them more reliable.</p>
 
+  <a class="article-card" href="{{ '/articles/upi-payment-timeout-money-debited/' | relative_url }}">
+    <p class="eyebrow">03 · PAYMENT RELIABILITY · 7 MIN READ</p>
+    <h2>UPI Payment Failed? Why Your Money Gets Stuck</h2>
+    <p>How to diagnose a payment timeout, recover uncertain transactions safely, and prevent duplicate payments through idempotency and reconciliation.</p>
+    <span class="card-link">Read article →</span>
+  </a>
+
   <a class="article-card" href="{{ '/articles/retries-turn-slow-dependency-into-outage/' | relative_url }}">
     <p class="eyebrow">02 · API RELIABILITY · 7 MIN READ</p>
     <h2>How Retries Turn a Slow Dependency into an Outage</h2>
