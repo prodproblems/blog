@@ -10,7 +10,11 @@ episode: 003
 
 ## Watch the episode
 
-The Day 3 video will be linked here after the episode is published.
+<div class="video-container">
+  <iframe src="https://www.youtube-nocookie.com/embed/5iEZPP2QBRU" title="Real Production Problems — Day 3: UPI Payment Failed? Why Your Money Gets Stuck" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[Watch directly on YouTube](https://www.youtube.com/watch?v=5iEZPP2QBRU) ↗
 
 - This article is the technical companion to the episode, with deeper reasoning, caveats, and operational checks.
 - [Visit the YouTube channel](https://www.youtube.com/@RealProductionProblem) ↗
