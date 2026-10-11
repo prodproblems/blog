@@ -13,6 +13,12 @@ description: Real engineering problems, explained simply.
 
 <section class="home-section">
   <h2>Latest breakdown</h2>
+  <a class="article-card" href="{{ '/articles/upi-payment-timeout-money-debited/' | relative_url }}">
+    <p class="eyebrow">PAYMENT RELIABILITY · PAYMENT CORRECTNESS</p>
+    <h3>UPI Payment Failed? Why Your Money Gets Stuck</h3>
+    <p>Diagnose payment timeouts, resolve uncertain transaction outcomes safely, and prevent duplicate payments with idempotency and reconciliation.</p>
+    <span class="card-link">Read the breakdown →</span>
+  </a>
   <a class="article-card" href="{{ '/articles/retries-turn-slow-dependency-into-outage/' | relative_url }}">
     <p class="eyebrow">API RELIABILITY · RETRY SAFETY</p>
     <h3>How Retries Turn a Slow Dependency into an Outage</h3>
