@@ -8,6 +8,14 @@ reading_time: 7 min read
 episode: 004
 ---
 
+## Watch the episode
+
+<div class="video-container">
+  <iframe src="https://www.youtube-nocookie.com/embed/BuwrPbRPF3Y" title="Real Production Problems — Day 4: How a 1-Złoty Phone Deal Took Down a Website" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[Watch directly on YouTube](https://youtu.be/BuwrPbRPF3Y) ↗
+
 ## The incident in 3 minutes
 
 A special offer can bring a sudden rush of customers to an online store. But what happens when the system cannot add capacity—even when the machines appear to have resources available?
