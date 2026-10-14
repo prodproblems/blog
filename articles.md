@@ -12,7 +12,7 @@ permalink: /articles/
 
   <a class="article-card" href="{{ '/articles/allegro-flash-sale-outage/' | relative_url }}">
     <p class="eyebrow">04 · SCALING & RELIABILITY · 7 MIN READ</p>
-    <h2>How a 1-Złoty Phone Deal Took Down a Website</h2>
+    <h2>How a $1 Phone Deal Took Down a Website</h2>
     <p>How a flash-sale traffic spike exposed scaling constraints—and how to diagnose, recover, and prepare for the next surge.</p>
     <span class="card-link">Read article →</span>
   </a>
