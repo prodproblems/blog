@@ -1,6 +1,6 @@
 ---
 layout: article
-title: How a 1-Złoty Phone Deal Took Down a Website
+title: How a $1 Phone Deal Took Down a Website
 description: A documented Allegro outage explained through traffic spikes, scaling configuration, safe recovery, and prevention.
 permalink: /articles/allegro-flash-sale-outage/
 category: Scaling & Reliability
@@ -11,7 +11,7 @@ episode: 004
 ## Watch the episode
 
 <div class="video-container">
-  <iframe src="https://www.youtube-nocookie.com/embed/BuwrPbRPF3Y" title="Real Production Problems — Day 4: How a 1-Złoty Phone Deal Took Down a Website" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/BuwrPbRPF3Y" title="Real Production Problems — Day 4: How a $1 Phone Deal Took Down a Website" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 [Watch directly on YouTube](https://youtu.be/BuwrPbRPF3Y) ↗
@@ -22,7 +22,7 @@ A special offer can bring a sudden rush of customers to an online store. But wha
 
 On July 18, 2018, Allegro, a major Polish e-commerce platform, offered 100 Honor 7C smartphones for **1 Polish złoty each**. The offer attracted far more traffic than expected. Allegro reported that the website was unavailable for around 20 minutes.
 
-This was not documented as a scam. The important engineering lesson is that a traffic spike exposed problems in how parts of the platform scaled and used resources.
+**Title clarification:** “$1” is used as a simplified headline. The original offer was **1 Polish złoty**, not US$1. This incident was not documented as a scam. The engineering lesson is that a traffic spike exposed problems in how parts of the platform scaled and used resources.
 
 **Primary source:** [Allegro’s official postmortem: “Why Allegro went down”](https://blog.allegro.tech/2018/08/postmortem-why-allegro-went-down.html)
 
